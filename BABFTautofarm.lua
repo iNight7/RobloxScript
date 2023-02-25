@@ -18,13 +18,11 @@ wait(2)
 
 --5 Stage
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-62.649, 33.261, 3729.935)
-workspace.ClaimRiverResultsGold:FireServer()
 
 wait(2)
 
 --6 Stage
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-57.339, 42.988, 4528.280)
-workspace.ClaimRiverResultsGold:FireServer()
 
 wait(2)
 
