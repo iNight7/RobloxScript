@@ -39,9 +39,8 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 
 while true do
-	spawn(function()
-  loadstring(game:HttpGet(('https://raw.githubusercontent.com/iNight7/RobloxScript/main/BABFTautofarm.lua'),true))()
-  end)
+local coro = coroutine.wrap(loadstring(game:HttpGet(('https://raw.githubusercontent.com/iNight7/RobloxScript/main/BABFTautofarm.lua'),true))())
+coro()
   wait(0.2)
   count = count + 1
   print("Times executed :" .. count)
