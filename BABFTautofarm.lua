@@ -1,3 +1,5 @@
+while true do
+   local success, err = pcall(function()
 --2 Stage
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-58.603, 81.962, 1430.981)
 workspace.ClaimRiverResultsGold:FireServer()
@@ -68,3 +70,9 @@ workspace.ClaimRiverResultsGold:FireServer()
 wait(2.7)
 game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 wait(0.5)
+   end)
+   
+   if not success then
+      warn("Error: " .. err)
+   end
+end
